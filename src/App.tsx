@@ -56,9 +56,6 @@ export default function App() {
           <h1 className="text-3xl font-bold text-eggshell tracking-tight">
             URL Shortener
           </h1>
-          <p className="mt-2 text-sm text-snow/50">
-            Pega tu URL larga y obtén un enlace corto al instante
-          </p>
         </div>
 
         {/* Card */}
@@ -69,7 +66,7 @@ export default function App() {
                 htmlFor="url-input"
                 className="block text-sm font-medium text-snow/70 mb-1.5"
               >
-                URL larga
+                URL para acortar
               </label>
               <input
                 id="url-input"
