@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const host = import.meta.env.VITE_API_URL || "https://url.wickz.dev";
-const stage = "prod";
 
 export default function App() {
   const [longUrl, setLongUrl] = useState("");
@@ -13,7 +12,7 @@ export default function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch(`${host}/${stage}/shorten`, {
+      const response = await fetch(`${host}/shorten`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url: longUrl }),
